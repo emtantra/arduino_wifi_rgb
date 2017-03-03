@@ -44,7 +44,7 @@
 		<link>
 			<name>libraries/ChainableLED</name>
 			<type>2</type>
-			<location>D:/rnd/git/ard_user_libs/ChainableLED</location>
+			<locationURI>ECLIPSE_HOME/extern_libs/ChainableLED</locationURI>
 		</link>
 		<link>
 			<name>libraries/EEPROM</name>
@@ -54,7 +54,7 @@
 		<link>
 			<name>libraries/ESP8266_SoftwareSerial</name>
 			<type>2</type>
-			<location>D:/rnd/git/ard_user_libs/ESP8266_SoftwareSerial</location>
+			<locationURI>ECLIPSE_HOME/extern_libs/ESP8266_SoftwareSerial</locationURI>
 		</link>
 		<link>
 			<name>libraries/SoftwareSerial</name>
