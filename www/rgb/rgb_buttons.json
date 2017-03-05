@@ -1,0 +1,144 @@
+{
+  "Buttons": [
+    {
+      "name": "btn_1",
+      "color": "#eeeeee",
+      "function": "DIM+",
+	  "data" : "",
+	  "text": "+"
+    },
+    {
+      "name": "btn_2",
+      "color": "#eeeeee",
+      "function": "DIM-",
+	  "data" : "",
+	  "text": "-"
+    },
+    {
+      "name": "btn_3",
+      "color": "#eeeeee",
+      "function": "PLAY",
+	  "data" : "",
+	  "text": "||>"
+    },
+    {
+      "name": "btn_4",
+      "color": "#eeeeee",
+      "function": "OFF",
+	  "data" : "",
+	  "text": "OFF"
+    },
+    {
+      "name": "btn_5",
+      "color": "#ff0000",
+      "function": "color",
+	  "data" : "#ff0000",
+	  "text": ""
+    },
+    {
+      "name": "btn_6",
+      "color": "#339900",
+      "function": "color",
+	  "data" : "#00ff00",
+	  "text": ""
+    },
+    {
+      "name": "btn_7",
+      "color": "#0000ff",
+      "function": "color",
+	  "data" : "#0000ff",
+	  "text": ""
+    },
+    {
+      "name": "btn_8",
+      "color": "#ffffff",
+      "function": "color",
+	  "data" : "#ffffff",
+	  "text": ""
+    },
+    {
+      "name": "btn_9",
+      "color": "#ff9900",
+      "function": "color",
+	  "data" : "#ff3300",
+	  "text": ""
+    },
+    {
+      "name": "btn_10",
+      "color": "#ffff00",
+      "function": "color",
+	  "data" : "#ff7700",
+	  "text": ""
+    },
+    {
+      "name": "btn_11",
+      "color": "#33ccff",
+      "function": "color",
+	  "data" : "#0acccc",
+	  "text": ""
+    },
+    {
+      "name": "btn_12",
+      "color": "#ff66cc",
+      "function": "color",
+	  "data" : "#ff2233",
+	  "text": ""
+    },
+    {
+      "name": "btn_13",
+      "color": "#eeeeee",
+      "function": "R+",
+	  "data" : "",
+	  "text": "R+"
+    },
+    {
+      "name": "btn_14",
+      "color": "#eeeeee",
+      "function": "G+",
+	  "data" : "",
+	  "text": "G+"
+    },
+    {
+      "name": "btn_15",
+      "color": "#eeeeee",
+      "function": "B+",
+	  "data" : "",
+	  "text": "B+"
+    },
+    {
+      "name": "btn_16",
+      "color": "#eeeeee",
+      "function": "QUICK",
+	  "data" : "",
+	  "text": "QUICK"
+    },
+    {
+      "name": "btn_17",
+      "color": "#eeeeee",
+      "function": "R-",
+	  "data" : "",
+	  "text": "R-"
+    },
+    {
+      "name": "btn_18",
+      "color": "#eeeeee",
+      "function": "G-",
+	  "data" : "",
+	  "text": "G-"
+    },
+    {
+      "name": "btn_19",
+      "color": "#eeeeee",
+      "function": "B-",
+	  "data" : "",
+	  "text": "B-"
+    },
+    {
+      "name": "btn_20",
+      "color": "#eeeeee",
+      "function": "SLOW",
+	  "data" : "",
+	  "text": "SLOW"
+    }
+  ]
+}

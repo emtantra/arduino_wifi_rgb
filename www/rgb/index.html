@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+ <title>RGB lights</title>
+ <script type="text/javascript" src="jquery.js"></script>
+ 
+ <!--
+ [dim up][dim dn][play][off]
+ [red][green][blue][white]
+ [red2][green2][blue2][pink]
+ [orange][light green blue][deep purple][pink2]
+ [light yellow][green blue][purple][]
+ [yellow][][][]
+ [Red up][green up][blue up][quick]
+ [red dn][red dn][blue dn][slow]
+ -->
+ 
+ <style TYPE="text/css">
+ .button {
+	border: none;
+	height: 200px;
+	width: 200px;
+	display: inline-block;
+    margin: 4px 4px;
+	border-radius: 8px;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	font-size: 100%;
+ }
+
+ body {
+	background: white;
+	font-size: 42px;
+ }
+ </style>
+ 
+ <script type="text/javascript" charset="utf-8">
+ var arr_functions = [];
+ 
+  $(document).ready(function() {
+	$.getJSON('rgb_buttons.json', function(data) {
+		var res = "";
+		var index = 0;
+		$.each(data.Buttons, function(key, button){
+			if (index == 4) {
+				res += '</div>';
+				index = 0;
+			}
+			if (index == 0) {
+				res += '<div>';
+			}
+			res += '<button class="button" type="button" id="' + button.name + '">' + button.text + '</button>'
+			index += 1;
+		});
+		$(res).appendTo('body');
+		
+		// Color the buttons
+		$.each(data.Buttons, function(key, button){
+			var btn_name = '#' + button.name;
+			//alert(btn_name);
+			$(btn_name).css('background',button.color);
+			arr_functions[button.name] = button.function + ',' + button.data;
+		});
+		
+		// Capture all button clicks
+		$( ".button" ).click(function() {
+			btn_function(this.id);
+		});
+	})
+  });
+  
+  function hexToRgb(h) {
+	var r = parseInt((cutHex(h)).substring(0,2),16);
+    var g = parseInt((cutHex(h)).substring(2,4),16);
+    var b = parseInt((cutHex(h)).substring(4,6),16);
+	return r+','+g+','+b;
+  }
+  function cutHex(h) {
+	return (h.charAt(0)=='#') ? h.substring(1,7):h
+  }
+	  
+  function btn_function(btn_id) {
+	var tok = arr_functions[btn_id].split(',');
+	var data = '';
+	if (tok[0] == 'color') {
+		var color_val = hexToRgb(tok[1]);
+		var colors = color_val.split(',');
+		data = 'RGB=' + colors[0] + ',' + colors[1] + ',' + colors[2] + '\r\n';
+	}
+	else {
+		data = 'CMD=' + tok[0] + '\r\n';
+	}
+	
+	$.ajax({
+    type: "POST",
+    url: "functions.php",
+    data: {'data': data},
+    cache: false,
+    });
+	
+  }
+ </script>
+
+</head>
+<body>
+
+
+</body>
+</html>
