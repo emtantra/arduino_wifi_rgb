@@ -5,16 +5,15 @@
  *      Author: dimtass
  */
 
-#ifndef CONF_H_
-#define CONF_H_
+#ifndef CONFIG_H_
+#define CONFIG_H_
 
 #include "Arduino.h"
 #include "EEPROM.h"
 
-class Conf {
+class Config {
 public:
-#pragma pack(1)
-
+	#pragma pack(1)
 	typedef struct {
 		uint16_t	preamble;
 		uint8_t		version;
@@ -28,12 +27,14 @@ public:
 		uint16_t	m_ext_conf_size;
 	} tp_conf;
 
-	Conf(uint16_t header, uint16_t version, uint16_t conf_pos, uint8_t * ext_conf, uint8_t ext_conf_size);
-	~Conf();
+	Config(uint16_t header, uint8_t version, uint16_t conf_pos, uint8_t * ext_conf, uint8_t ext_conf_size);
+	~Config();
 	void	SetDefaultValues(uint8_t * def_values, uint16_t conf_size);
-	int		Load();
-	int		Save();
-	int		Defaults();
+	uint16_t GetConf(uint8_t *buffer, uint16_t buff_size);
+	uint16_t SetConf(uint8_t *buffer, uint16_t buff_size);
+	void	Load();
+	void	Save();
+	void	Defaults();
 
 private:
 	tp_conf m_conf;

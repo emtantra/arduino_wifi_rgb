@@ -25,9 +25,6 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ard_wifi_rgb/libraries/EEPROM/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ard_wifi_rgb/libraries/SoftwareSerial}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ard_wifi_rgb/libraries/SoftwareSerial/src}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ard_wifi_rgb/libraries/ChainableLED}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ard_wifi_rgb/libraries/TimerOne}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ard_wifi_rgb/libraries/ESP8266_SoftwareSerial}&quot;"/>
 								</option>
 								<inputType id="io.sloeber.compiler.cpp.sketch.input.496745399" name="CPP source files" superClass="io.sloeber.compiler.cpp.sketch.input"/>
 							</tool>
@@ -39,9 +36,6 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ard_wifi_rgb/libraries/EEPROM/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ard_wifi_rgb/libraries/SoftwareSerial}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ard_wifi_rgb/libraries/SoftwareSerial/src}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ard_wifi_rgb/libraries/ChainableLED}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ard_wifi_rgb/libraries/TimerOne}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ard_wifi_rgb/libraries/ESP8266_SoftwareSerial}&quot;"/>
 								</option>
 								<inputType id="io.sloeber.compiler.c.sketch.input.916030842" name="C Source Files" superClass="io.sloeber.compiler.c.sketch.input"/>
 							</tool>
@@ -53,9 +47,6 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ard_wifi_rgb/libraries/EEPROM/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ard_wifi_rgb/libraries/SoftwareSerial}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ard_wifi_rgb/libraries/SoftwareSerial/src}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ard_wifi_rgb/libraries/ChainableLED}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ard_wifi_rgb/libraries/TimerOne}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ard_wifi_rgb/libraries/ESP8266_SoftwareSerial}&quot;"/>
 								</option>
 								<inputType id="io.sloeber.compiler.S.sketch.input.174236747" name="Assembly source files" superClass="io.sloeber.compiler.S.sketch.input"/>
 							</tool>

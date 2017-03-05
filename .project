@@ -39,12 +39,7 @@
 		<link>
 			<name>core/variant</name>
 			<type>2</type>
-			<locationURI>ECLIPSE_HOME/arduinoPlugin/packages/arduino/hardware/avr/1.6.17/variants/eightanaloginputs</locationURI>
-		</link>
-		<link>
-			<name>libraries/ChainableLED</name>
-			<type>2</type>
-			<locationURI>ECLIPSE_HOME/extern_libs/ChainableLED</locationURI>
+			<locationURI>ECLIPSE_HOME/arduinoPlugin/packages/arduino/hardware/avr/1.6.17/variants/standard</locationURI>
 		</link>
 		<link>
 			<name>libraries/EEPROM</name>
@@ -52,19 +47,9 @@
 			<locationURI>ECLIPSE_HOME/arduinoPlugin/packages/arduino/hardware/avr/1.6.17/libraries/EEPROM</locationURI>
 		</link>
 		<link>
-			<name>libraries/ESP8266_SoftwareSerial</name>
-			<type>2</type>
-			<locationURI>ECLIPSE_HOME/extern_libs/ESP8266_SoftwareSerial</locationURI>
-		</link>
-		<link>
 			<name>libraries/SoftwareSerial</name>
 			<type>2</type>
 			<locationURI>ECLIPSE_HOME/arduinoPlugin/packages/arduino/hardware/avr/1.6.17/libraries/SoftwareSerial</locationURI>
-		</link>
-		<link>
-			<name>libraries/TimerOne</name>
-			<type>2</type>
-			<locationURI>ECLIPSE_HOME/arduinoPlugin/libraries/TimerOne/1.1.0</locationURI>
 		</link>
 	</linkedResources>
 </projectDescription>
