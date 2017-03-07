@@ -260,11 +260,11 @@ void udp_parser(uint16_t data_len)
 
 		/* Get RGB color values  */
 		p = strtok((char*) &udp_buff[4], &token);
-		glb_rgb.set_R(atoi(p));
+		glb_rgb.set_R((uint8_t)(0xFF & atoi(p)));
 		p = strtok(NULL, &token);
-		glb_rgb.set_G(atoi(p));
+		glb_rgb.set_G((uint8_t)(0xFF & atoi(p)));
 		p = strtok(NULL, &token);
-		glb_rgb.set_B(atoi(p));
+		glb_rgb.set_B((uint8_t)(0xFF & atoi(p)));
 		glb_rgb.update();
 
 		glb_rgb.print_rgb();

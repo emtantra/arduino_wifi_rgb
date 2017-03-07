@@ -39,9 +39,9 @@ public:
 	RGB_Colors();
 	virtual ~RGB_Colors();
 	void reset(void);
-	void set_R(byte value);
-	void set_G(byte value);
-	void set_B(byte value);
+	void set_R(uint8_t value);
+	void set_G(uint8_t value);
+	void set_B(uint8_t value);
 	byte get_R(void);
 	byte get_G(void);
 	byte get_B(void);
@@ -55,7 +55,7 @@ private:
 	byte dim_up(byte value, byte up_value);
 	byte dim_dn(byte value, byte dn_value);
 
-	byte		m_colors[3];
+	uint8_t		m_colors[3];
 	bool		m_inc[3];
 	float		m_brightness;
 	ChainableLED *m_driver;

@@ -31,17 +31,17 @@ void RGB_Colors::reset(void)
 }
 
 
-void RGB_Colors::set_R(byte value)
+void RGB_Colors::set_R(uint8_t value)
 {
 	m_colors[R] = value;
 }
 
-void RGB_Colors::set_G(byte value)
+void RGB_Colors::set_G(uint8_t value)
 {
 	m_colors[G] = value;
 }
 
-void RGB_Colors::set_B(byte value)
+void RGB_Colors::set_B(uint8_t value)
 {
 	m_colors[B] = value;
 }
@@ -152,10 +152,8 @@ byte RGB_Colors::dim_dn(byte value, byte dn_value)
 void RGB_Colors::fluctuate(byte value)
 {
 	int i = 0;
-	int prev = 0;
 	int new_val = 0;
 	for (i=R; i<=B; i++) {
-		prev = m_colors[i];
 		if (m_inc[i]) {
 			new_val = m_colors[i]+value;
 			if (new_val >= 255) {
