@@ -129,7 +129,7 @@ bool Conf_AP::parser(uint8_t * buffer, size_t len)
 		/* Save ssid passwd to EEPROM */
 
 	}
-	else if (!(strncmp((char*)buffer, "RESET", 10))) {
+	else if (!(strncmp((char*)buffer, "RESET", 5))) {
 		/* Exit */
 		Serial.println("EXIT");
 		m_wifi->restart();
